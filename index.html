@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home Finder</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>   
+  </head>
+  <body>
+    <a-scene background="color:#676767">
+
+      <a-entity id="posters-container"> </a-entity>
+
+      <a-camera id="camera" wasd-controls="enabled:false;" position="0 10 20">
+        <a-entity
+          id="camera-cursor"
+          cursor
+          position="0 0 -3"
+          geometry="primitive: ring; radiusInner: 0.08; radiusOuter: 0.12"
+          material="color: black; shader: flat"
+        >
+        </a-entity>
+
+        <!-- Title -->
+        <!-- <a-entity
+          id="app-title"
+          position="0 0.73 -1"
+          text="font: exo2bold; align: center; width: 2; color: #000; value: Home Finder"
+        >
+          <a-entity
+            id="app-subtitle"
+            position="0 -0.1 0"
+            text="font: dejavu; align: center; width: 1; color: #0F184E; value: Get Your Favourite Comics"
+          ></a-entity>
+        </a-entity>    -->
+        
+         <!-- <a-entity
+          id="fadeBackground"
+          geometry="primitive: sphere; radius: 2.5"
+          material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
+          visible="false"
+        >
+        </a-entity> -->
+
+        <a-entity geometry="primitive: circle; radius: 12" position="-35 20 -40" material="color: #fff" id="C205-NCCMeadows">
+            <a-entity geometry="primitive: circle; radius: 11" position="0 0 0.1" material="src: ./assets/205.jpeg">
+            </a-entity>
+            <a-entity text="font: exo2bold; align: center; width: 50; value: C-204, NCC Meadows" position="0 -15 0.1">
+            </a-entity>
+        </a-entity>
+
+        <a-entity geometry="primitive: circle; radius: 12" position="5 20 -40" material="color: #fff" id="C305-NCCMeadows">
+            <a-entity geometry="primitive: circle; radius: 11" position="0 0 0.1" material="src: ./assets/305.jpeg">
+            </a-entity>
+            <a-entity text="font: exo2bold; align: center; width: 60; value: C-304, NCC Meadows" position="0 -15 0.1">
+            </a-entity>
+        </a-entity>
+
+        <a-entity geometry="primitive: circle; radius: 12" position="45 20 -40" material="color: #fff" id="C405-NCCMeadows">
+            <a-entity geometry="primitive: circle; radius: 11" position="0 0 0.1" material="src: ./assets/405.jpeg">
+            </a-entity>
+            <a-entity text="font: exo2bold; align: center; width: 60; value: C-404, NCC Meadows" position="0 -15 0.1">
+            </a-entity>
+        </a-entity>
+
+        <a-entity geometry="primitive: circle; radius: 12" position="-35 -15 -40" material="color: #fff" id="C505-NCCMeadows">
+            <a-entity geometry="primitive: circle; radius: 11" position="0 0 0.1" material="src: ./assets/505.jpeg">
+            </a-entity>
+            <a-entity text="font: exo2bold; align: center; width: 60; value: C-504, NCC Meadows" position="0 -15 0.1">
+            </a-entity>
+        </a-entity>
+
+        <a-entity geometry="primitive: circle; radius: 12" position="5 -15 -40" material="color: #fff" id="C605-NCCMeadows">
+            <a-entity geometry="primitive: circle; radius: 11" position="0 0 0.1" material="src: ./assets/605.jpeg">
+            </a-entity>
+            <a-entity text="font: exo2bold; align: center; width: 60; value: C-604, NCC Meadows" position="0 -15 0.1">
+            </a-entity>
+        </a-entity>
+
+        <a-entity geometry="primitive: circle; radius: 12" position="45 -15 -40" material="color: #fff" id="C705-NCCMeadows">
+            <a-entity geometry="primitive: circle; radius: 11" position="0 0 0.1" material="src: ./assets/705.jpeg">
+            </a-entity>
+            <a-entity text="font: exo2bold; align: center; width: 60; value: C-704, NCC Meadows" position="0 -15 0.1">
+            </a-entity>
+        </a-entity>
+
+      </a-camera>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
